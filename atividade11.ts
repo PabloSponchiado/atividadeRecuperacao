@@ -20,11 +20,11 @@ let acrescimo = 1.13;
 let vcarros = 0;
 
 console.log("----------------------------------------------");
-console.log("Escolha um dos modelos de carro:");
-console.log("1 - Honda Civic: R$ 50.000,00");
-console.log("2 - Nissan Kicks: R$ 60.000,00");
-console.log("3 - Volkswagen Up: R$ 70.000,00");
-console.log("4 - Ford Ka: R$ 80.000,00");
+console.log("Escolha um dos modelos de carro:--------------");
+console.log("1 - Honda Civic: R$ 50.000,00-----------------");
+console.log("2 - Nissan Kicks: R$ 60.000,00----------------");
+console.log("3 - Volkswagen Up: R$ 70.000,00---------------");
+console.log("4 - Ford Ka: R$ 80.000,00---------------------");
 console.log("----------------------------------------------");
 
 let opcao: number = parseInt(teclado("Digite o número do modelo desejado: "));
