@@ -14,8 +14,8 @@ let opcao: number = 0;
 do {
   console.log(`--------------------------------`);
   console.log(`--- Calculadora de Média -------`);
-  console.log(`--- 1 - Adicionar número--------`);
-  console.log(`--- 2 - Calcular média e sair---`);
+  console.log(`--- 1 - Adicionar número -------`);
+  console.log(`--- 2 - Calcular média e sair --`);
   console.log(`--------------------------------`);
 
   let opcao = parseInt(teclado(`Digite a opção desejada: `));

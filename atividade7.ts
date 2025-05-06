@@ -27,15 +27,15 @@ do {
     console.log(`Soma atual: ${soma}`);
   } 
   else if (opcao !== 2) {
-    console.log(`Opção inválida. Tente novamente.`);
+    console.log(`Opção inválida.`);
   }
 } 
 while (opcao !== 2 && soma <= 100);
 
 
 if (soma > 100) {
-  console.log(`A soma excedeu o limite de 100.`);
+  console.log(`A soma passou o limite de 100.`);
 } 
 else {
-  console.log(`Programa encerrado.`);
+  console.log(`Fim.`);
 };
