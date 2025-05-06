@@ -6,7 +6,7 @@ o valor de x e mostre os números.
 Nome Aluno: Pablo Isaac Sponchiado da Silva
 */
 
-const teclado = require (`prompt-sync`);
+const teclado = require (`prompt-sync`)();
 
 let x = parseInt(teclado(`Digite um número: \n `)); 
 let z : number = 0

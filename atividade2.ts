@@ -15,6 +15,7 @@ let n3 = parseInt(teclado(`Digite o terceiro número: \n `));
 console.log(`Os números em ordem decrescente são: `);
 
 if (n1 < n2 && n1 < n3) {
+  
   if (n2 < n3) {
     console.log(`A ordem crescente é: ${n1}, ${n2}, ${n3}`);
   } else {

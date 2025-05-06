@@ -6,8 +6,8 @@ Nome aluno:Pablo Isaac Sponchiado
 
 const teclado = require(`prompt-sync`)();
 
-let soma = 0;
-let opcao = 0;
+let soma : number = 0;
+let opcao : number = 0;
 console.clear();
 
 do {
@@ -18,21 +18,24 @@ do {
   console.log(`-- 2 - Sair ---------------`);
   console.log(`---------------------------`) 
   
-  opcao = parseInt(teclado("Digite a opção desejada: "));
+  let opcao = parseInt(teclado(`Digite a opção desejada: `));
 
-  if (opcao === 1) {
+  if (opcao == 1) {
     
-    const numero = parseFloat(teclado("Digite um número: "));
+    const numero = parseFloat(teclado(`Digite um número: `));
     soma += numero;
     console.log(`Soma atual: ${soma}`);
-  } else if (opcao !== 2) {
-    console.log("Opção inválida. Tente novamente.");
+  } 
+  else if (opcao !== 2) {
+    console.log(`Opção inválida. Tente novamente.`);
   }
-} while (opcao !== 2 && soma <= 100);
+} 
+while (opcao !== 2 && soma <= 100);
 
 
 if (soma > 100) {
-  console.log("A soma excedeu o limite de 100.");
-} else {
-  console.log("Programa encerrado.");
+  console.log(`A soma excedeu o limite de 100.`);
+} 
+else {
+  console.log(`Programa encerrado.`);
 };

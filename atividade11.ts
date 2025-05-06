@@ -19,15 +19,15 @@ let descontoavista = 0.15;
 let acrescimo = 1.13;
 let vcarros = 0;
 
-console.log("----------------------------------------------");
-console.log("Escolha um dos modelos de carro:--------------");
-console.log("1 - Honda Civic: R$ 50.000,00-----------------");
-console.log("2 - Nissan Kicks: R$ 60.000,00----------------");
-console.log("3 - Volkswagen Up: R$ 70.000,00---------------");
-console.log("4 - Ford Ka: R$ 80.000,00---------------------");
-console.log("----------------------------------------------");
+console.log(`----------------------------------------------`);
+console.log(`Escolha um dos modelos de carro:--------------`);
+console.log(`1 - Honda Civic: R$ 50.000,00-----------------`);
+console.log(`2 - Nissan Kicks: R$ 60.000,00----------------`);
+console.log(`3 - Volkswagen Up: R$ 70.000,00---------------`);
+console.log(`4 - Ford Ka: R$ 80.000,00---------------------`);
+console.log(`----------------------------------------------`);
 
-let opcao: number = parseInt(teclado("Digite o número do modelo desejado: "));
+let opcao: number = parseInt(teclado(`Digite o número do modelo desejado: `));
 
 if (opcao == 1) {
     vcarros = civic;
@@ -38,17 +38,17 @@ if (opcao == 1) {
 } else if (opcao == 4) {
     vcarros = fordka;
 } else {
-    console.log("Opção inválida. Tente novamente.");
+    console.log(`Opção inválida. Tente novamente.`);
 }
 
 if (vcarros > 0) 
-    console.log("----------------------------------------------");
-    console.log("Escolha a forma de pagamento:-----------------");
-    console.log("1 - À vista-----------------------------------");
-    console.log("2 - Parcelado---------------------------------");
-    console.log("----------------------------------------------");
+    console.log(`----------------------------------------------`);
+    console.log(`Escolha a forma de pagamento:-----------------`);
+    console.log(`1 - À vista-----------------------------------`);
+    console.log(`2 - Parcelado---------------------------------`);
+    console.log(`----------------------------------------------`);
 
-    let formaPagamento: number = parseInt(teclado("Digite o número da forma de pagamento desejada: "));
+    let formaPagamento: number = parseInt(teclado(`Digite o número da forma de pagamento desejada: `));
 
     if (formaPagamento == 1) {
         vcarros = vcarros - (vcarros * descontoavista);
@@ -57,5 +57,5 @@ if (vcarros > 0)
         vcarros = vcarros * acrescimo;
         console.log(`O valor do carro parcelado é: R$ ${vcarros}`);
     } else {
-        console.log("Opção inválida. Tente novamente.");
+        console.log(`Opção inválida. Tente novamente.`);
     }

@@ -13,8 +13,8 @@ let totalPessoas: number = 0;
 do {
   console.log(`Pessoa ${totalPessoas + 1}:`);
   
-  let altura = parseFloat(teclado("Digite sua altura (em metros): "));
-  let idade = parseInt(teclado("Digite sua idade: "));
+  let altura = parseFloat(teclado(`Digite sua altura (em metros): `));
+  let idade = parseInt(teclado(`Digite sua idade: `));
 
   if (idade >= 18) {
     somaAltura += altura;
@@ -31,6 +31,6 @@ if (cont > 0) {
   mediaAltura = 0;
 }
 
-console.log("--- Resultados ---");
+console.log(`--- Resultados ---`);
 console.log(`Média de altura das pessoas maiores de idade: ${mediaAltura} metros`);
 console.log(`Total de pessoas maiores de idade: ${cont}`);

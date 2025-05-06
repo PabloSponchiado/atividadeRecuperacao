@@ -17,43 +17,49 @@ let contador: number = 1;
 while (contador <= 50) {
   console.log(`Pessoa ${contador}:`);
 
-  let idade: number = parseInt(teclado("Digite a idade: "));
-  let sexo: string = teclado("Digite o sexo (M para masculino, F para feminino): ")();
+  let idade: number = parseInt(teclado(`Digite a idade: `));
+  let sexo: string = teclado(`Digite o sexo (M para masculino, F para feminino): `)();
 
-  if (sexo === "M") {
+  if (sexo == `M`) {
     somaIdadeHomem += idade;
     contHomem++;
     contador++;
-  } else if (sexo === "F") {
+  } 
+  else if (sexo == `F`) {
     somaIdadeMulher += idade;
     contMulher++;
     contador++; 
-  } else {
-    console.log("Sexo inválido. Tente novamente.");
+  } 
+  else {
+    console.log(`Sexo inválido. Tente novamente.`);
     
   }
 }
 
-let mediaIdadeHomem: number;
+let mediaIdadeHomem: number = 0;
 if (contHomem > 0) {
   mediaIdadeHomem = somaIdadeHomem / contHomem;
-} else {
+} 
+else {
   mediaIdadeHomem = 0;
 }
 
-let mediaIdadeMulher: number;
+let mediaIdadeMulher: number = 0;
+
 if (contMulher > 0) {
   mediaIdadeMulher = somaIdadeMulher / contMulher;
-} else {
+} 
+else {
   mediaIdadeMulher = 0;
 }
 
-console.log("--- Resultados ---");
-console.log(`Média de idade dos homens: ${mediaIdadeHomem}`);
+console.log(`------------------------------------------------`);
+console.log(`--------------- Resultados ---------------------`);
+console.log(`Média de idade dos homens: ${mediaIdadeHomem}---`);
 console.log(`Média de idade das mulheres: ${mediaIdadeMulher}`);
-console.log(``);
-console.log(`Total de homens: ${contHomem}`);
-console.log(`Total de mulheres: ${contMulher}`);
-console.log(``);
-console.log(`Total de pessoas: ${contHomem + contMulher}`);
-
+console.log(`------------------------------------------------`);
+console.log(`Total de homens: ${contHomem}-------------------`);
+console.log(`Total de mulheres: ${contMulher}----------------`);
+console.log(`------------------------------------------------`);
+console.log(`Total de pessoas: ${contHomem + contMulher}-----`);
+console.log(`------------------------------------------------`);

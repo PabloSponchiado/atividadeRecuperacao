@@ -7,30 +7,30 @@ Nome aluno: Pablo Isaac Sponchiado da Silva
 
 const teclado = require(`prompt-sync`)();
 
-let n1: number = parseInt(teclado("Digite a primeira nota: "));
-let n2: number = parseInt(teclado("Digite a segunda nota: "));
-let n3: number = parseInt(teclado("Digite a terceira nota: "));
-let n4: number = parseInt(teclado("Digite a quarta nota: "));
-let n5: number = parseInt(teclado("Digite a quinta nota: "));
-let n6: number = parseInt(teclado("Digite a sexta nota: "));
-let n7: number = parseInt(teclado("Digite a sétima nota: "));
-let n8: number = parseInt(teclado("Digite a oitava nota: "));
-let n9: number = parseInt(teclado("Digite a nona nota: "));
-let n10: number = parseInt(teclado("Digite a décima nota: "));
+let n1: number = parseInt(teclado(`Digite a primeira numero: `));
+let n2: number = parseInt(teclado(`Digite a segunda numero: `));
+let n3: number = parseInt(teclado(`Digite a terceira numero: `));
+let n4: number = parseInt(teclado(`Digite a quarta numero: `));
+let n5: number = parseInt(teclado(`Digite a quinta numero: `));
+let n6: number = parseInt(teclado(`Digite a sexta numero: `));
+let n7: number = parseInt(teclado(`Digite a sétima numero: `));
+let n8: number = parseInt(teclado(`Digite a oitava numero: `));
+let n9: number = parseInt(teclado(`Digite a nona numero: `));
+let n10: number = parseInt(teclado(`Digite a décima numero: `));
 
 let par: number = 0;
 let impar: number = 0;
 
-let pares: string = ""; 
-let impares: string = ""; 
+let pares: string = ``; 
+let impares: string = ``; 
 
 function Par(numero: number) {
     if (numero % 2 === 0) {
         par++;
-        pares += numero + " "; 
+        pares += numero + ` `; 
     } else {
         impar++;
-        impares += numero + " "; 
+        impares += numero + ` `; 
     }
 }
 
